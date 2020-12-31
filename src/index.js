@@ -1,5 +1,3 @@
-import "./styles.css";
-
 var billAmount = document.querySelector("#bill-amount");
 var cashGiven = document.querySelector("#cash-given");
 var submitBtn = document.querySelector("#submit");
@@ -21,7 +19,6 @@ var denominationTypes = [
 function validate(event) {
   if (event.target.value.length > 0) {
     cashGiven.type = "number";
-    output.value = "event.target.value";
   } else {
     cashGiven.type = "hidden";
   }

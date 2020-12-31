@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/src/styles.css" />
-  </head>
+<html lang="en">
 
-  <body>
-    <header class="hero">
-      <img class="hero-img" src="/src/hero.svg" />
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cash Register App</title>
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
 
-    <div class="container container-center">
-      <input
-        id="bill-amount"
-        type="number"
-        placeholder="BILL AMOUNT 🧾"
-        min="1"
-        step="1"
-        required
-      />
-      <input
-        id="cash-given"
-        type="hidden"
-        placeholder="CASH GIVEN 💵"
-        min="1"
-        step="1"
-        required
-      />
+<body>
+  <header class="hero">
+    <img class="hero-img" src="/src/hero.svg" />
+  </header>
 
-      <button id="submit">SUBMIT</button>
+  <div class="container container-center">
+    <input
+      id="bill-amount"
+      type="number"
+      placeholder="BILL AMOUNT 🧾"
+      onfocus="this.value=''"
+      min="1"
+      step="1"
+      required
+    />
+    <input
+      id="cash-given"
+      type="hidden"
+      placeholder="CASH GIVEN 💵"
+      onfocus="this.value=''"
+      min="1"
+      step="1"
+      required
+    />
 
-      <div id="output"></div>
+    <button id="submit">SUBMIT</button>
 
-      <table id="output-table"></table>
-    </div>
+    <div id="output"></div>
 
-    <script src="src/index.js"></script>
-  </body>
+    <table id="output-table"></table>
+  </div>
+
+  <script src="src/index.js"></script>
+</body>
+
 </html>
