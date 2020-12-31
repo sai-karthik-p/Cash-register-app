@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+
+  <body>
+    <header class="hero">
+      <img class="hero-img" src="/src/hero.svg" />
+    </header>
+
+    <div class="container container-center">
+      <input
+        id="bill-amount"
+        type="number"
+        placeholder="BILL AMOUNT 🧾"
+        min="1"
+        step="1"
+        required
+      />
+      <input
+        id="cash-given"
+        type="hidden"
+        placeholder="CASH GIVEN 💵"
+        min="1"
+        step="1"
+        required
+      />
+
+      <button id="submit">SUBMIT</button>
+
+      <div id="output"></div>
+
+      <table id="output-table"></table>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
